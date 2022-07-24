@@ -16,4 +16,5 @@ module.exports = {
       logo: ["Handlee"],
     },
   },
+  plugins: [require("daisyui")],
 };

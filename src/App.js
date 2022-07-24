@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "./App.css";
-import { Home } from "./pages/Home";
+import { Home } from "./pages";
 
 function App() {
   const { pathname } = useLocation();
@@ -11,7 +11,7 @@ function App() {
   }, [pathname]);
 
   return (
-    <div className="App">
+    <div className="App text-gray-800">
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
