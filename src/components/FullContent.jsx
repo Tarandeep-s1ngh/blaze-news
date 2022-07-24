@@ -5,7 +5,11 @@ export const FullContent = () => {
     <section className="flex flex-col gap-2 max-w-2xl md:pt-3 md:h-[calc(100vh-2rem)] md:overflow-y-auto">
       <h1 className="font-heading text-lg font-semibold">Headline</h1>
       <div>
-        <img src="" alt="related to news" />
+        <img
+          src=""
+          alt="related to news"
+          className="max-w-full h-auto object-cover object-center"
+        />
       </div>
       <p className="text-justify">
         News content Lorem ipsum dolor sit amet consectetur adipisicing elit.

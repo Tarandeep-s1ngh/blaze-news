@@ -16,7 +16,7 @@ export const FeedCard = () => {
       <section className="flex [&>*]:px-1">
         <div className="avatar">
           <div className="w-12 rounded hover:cursor-pointer">
-            <img src={logo} alt="dp" />
+            <img src={logo} alt="related to news" />
           </div>
         </div>
         <div className="flex flex-col justify-start">
