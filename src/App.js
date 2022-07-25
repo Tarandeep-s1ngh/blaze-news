@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
+import { useNews } from "./context/news-context";
 import { Home } from "./pages";
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  const { newsState } = useNews();
 
   return (
     <div className="App text-gray-800">
@@ -27,6 +31,7 @@ function App() {
         draggable
         pauseOnHover
       />
+      {newsState.loading ? <span className="loader"></span> : <></>}
     </div>
   );
 }
