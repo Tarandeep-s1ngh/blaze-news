@@ -36,6 +36,7 @@ Blaze News is a web app that keeps you updated with the latest news around the g
 - Open detailed view for an article
 - Add articles to a seprate "favirotes" tab
 - Remove articles from "favirotes" tab
+- Your selected favorites will persist betweeen renders
 
 ### **Screenshots**
 
