@@ -49,6 +49,8 @@ Blaze News is a web app that keeps you updated with the latest news around the g
 
 ## **Running this app Locally**
 
+Please note that the newsAPI used in this project is the free developer version, hence, it will not work on hosted links. However, you can run the app locally on your system by following these steps:
+
 1. Clone the repository by running this command in your terminal.
 
 ```
@@ -57,7 +59,8 @@ gh repo clone Tarandeep-s1ngh/blaze-news
 ```
 
 2. A directory named "blaze-news" will be created on your machine.
-3. Go to the index.html and use the live server to run the project.
+3. Type "cd blaze-news" to go to that file & then type "$ npm install"
+4. To run the react project type "$ npm start"
 
 ## **Contributing to the project**
 
