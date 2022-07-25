@@ -23,7 +23,7 @@ export const Home = () => {
         payload: res,
       });
     })();
-  }, [newsDispatch]);
+  }, []);
 
   useEffect(() => {
     (async () => {
@@ -34,6 +34,15 @@ export const Home = () => {
       });
     })();
   }, [newsDispatch]);
+
+  useEffect(() => {
+    newsState.favorites =
+      JSON.parse(localStorage.getItem("newsfavorites")) ?? [];
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("newsfavorites", JSON.stringify(newsState.favorites));
+  }, [newsState.favorites]);
 
   const sourceNewsHandler = (id) => {
     (async () => {
