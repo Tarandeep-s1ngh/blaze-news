@@ -3,12 +3,15 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import { NewsProvider } from "./context/news-context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <NewsProvider>
+        <App />
+      </NewsProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

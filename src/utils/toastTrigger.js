@@ -4,8 +4,8 @@ export const triggerToast = (type, message) => {
   switch (type) {
     case "success":
       toast.success(message, {
-        position: "top-right",
-        autoClose: 5000,
+        position: "bottom-right",
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -15,8 +15,8 @@ export const triggerToast = (type, message) => {
       break;
     case "error":
       toast.error(message, {
-        position: "top-right",
-        autoClose: 5000,
+        position: "bottom-right",
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -26,8 +26,8 @@ export const triggerToast = (type, message) => {
       break;
     case "warning":
       toast.warning(message, {
-        position: "top-right",
-        autoClose: 5000,
+        position: "bottom-right",
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -37,8 +37,8 @@ export const triggerToast = (type, message) => {
       break;
     default:
       toast(message, {
-        position: "top-right",
-        autoClose: 5000,
+        position: "bottom-right",
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
